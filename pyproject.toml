@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "biliapi"
+version = "0.1.0"
+description = "A simple SDK for querying api.bilibili.com. Based on pydantic so you needn't any documents."
+authors = ["originalFactor <2438926613@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.8.2"
+httpx = "^0.27.0"
+beautifulsoup4 = "^4.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
