@@ -14,3 +14,12 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with BiliAPI.  If not, see <https://www.gnu.org/licenses/>.
+
+from asyncio import run
+from biliapi.login.info import nav
+
+
+async def start():
+    print((await nav()).model_dump_json())
+
+run(start())
